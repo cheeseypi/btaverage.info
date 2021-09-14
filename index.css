@@ -1,0 +1,96 @@
+/* Colors
+Background: #535354
+Foreground: #24bab5
+Light Foreground: #43f0ea*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #535354;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    margin-top: 15px;
+    font-family: 'Patua One', sans-serif;
+}
+p {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    position: sticky;
+    height: 40px;
+    top: 0;
+    right: 0;
+    left: auto;
+    text-align: right;
+    padding-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 8px 0px #000000;
+}
+
+img.btalogo {
+    width: 1374px;
+}
+@media only screen and (max-width: 1400px){
+    img.btalogo {
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 900px){
+    img.btalogo {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 450px){
+    img.btalogo {
+        width: 300px;
+    }
+}
+
+section {
+    padding: 20px;
+    width: calc(100%-40px);
+    text-align: center;
+    align-content: center;
+}
+section a {
+    color: white;
+}
+section.blue-info {
+    background-color: #24bab5;
+    color: black;
+}
+section.lblue-info{
+    background-color: #43f0ea;
+    color: black;
+}
+section.blue-info,section.lblue-info a {
+    color: black;
+}
+section.darkgray-info{
+    background-color: #434344;
+    color: white;
+}
