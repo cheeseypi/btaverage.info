@@ -40,15 +40,22 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    vertical-align: middle;
     display: inline-block;
     border-radius: 3px;
     background-color: black;
     color: white;
     box-shadow: 2px 2px 8px 0px #000000;
+    transition: box-shadow .3s;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 7px;
+}
+nav a:hover{
+    box-shadow: 4px 4px 10px 0px black;
 }
 
 img.btalogo {
