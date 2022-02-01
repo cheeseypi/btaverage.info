@@ -1,3 +1,7 @@
+@font-face{
+    font-family: Renogare;
+    src: url('res/Renogare-Regular.otf') format('opentype');
+}
 /* Colors
 Background: #535354
 Foreground: #24bab5
@@ -21,11 +25,12 @@ body {
 
 h1,h2,h3,h4,h5{
     margin-top: 15px;
-    font-family: 'Patua One', sans-serif;
+    font-family: 'Renogare', 'Patua One', sans-serif;
 }
 p,li {
     margin-top: 10px;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 nav {
