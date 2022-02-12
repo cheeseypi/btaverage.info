@@ -18,7 +18,8 @@ html {
 }
 
 body {
-    background-color: #535354;
+    /*background-color: #535354;*/
+    background-color: #5fe265;
     color: white;
     font-family: sans-serif;
 }
@@ -41,6 +42,7 @@ nav {
     left: auto;
     text-align: right;
     padding-right: 20px;
+    z-index: 999;
 }
 
 nav a {
@@ -53,22 +55,32 @@ nav a {
     border-radius: 3px;
     background-color: black;
     color: white;
-    box-shadow: 2px 2px 8px 0px #000000;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,.6) ;
     transition: box-shadow .3s;
     height: 26px;
     line-height: 26px;
     margin-top: 7px;
 }
 nav a:hover{
-    box-shadow: 4px 4px 10px 0px black;
+    box-shadow: 4px 4px 10px 0px rgba(0,0,0,.6);
+}
+
+.titletext {
+    font-size: 42pt;
+    margin-bottom: 10px;
 }
 
 img.btalogo {
-    width: 1374px;
+    width: 500px;
+    rotate: -6deg;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    -webkit-filter: drop-shadow(5px -5px 8px rgba(0,0,0,.5));
+    filter: drop-shadow(5px -5px 8px rgba(0,0,0,.5));
 }
 @media only screen and (max-width: 1400px){
     img.btalogo {
-        width: 800px;
+        width: 400px;
     }
 }
 @media only screen and (max-width: 900px){
@@ -78,6 +90,9 @@ img.btalogo {
     iframe[src*=youtube]{
         width: 300px;
         height: 168.75px;
+    }
+    .titletext {
+        font-size: 34pt;
     }
 }
 @media only screen and (max-width: 450px){
@@ -95,28 +110,31 @@ section {
 section a {
     color: white;
 }
-section.blue-info {
-    background-color: #24bab5;
+section.info-subcolor-1 {
+    /*background-color: #24bab5;*/
+    background-color: #47cc64;
     color: black;
 }
-section.lblue-info{
-    background-color: #43f0ea;
+section.info-subcolor-2{
+    /*background-color: #43f0ea;*/
+    background-color: #5fe265;
     color: black;
 }
-section.blue-info,section.lblue-info a {
+section.info-subcolor-1,section.info-subcolor-2 a {
     color: black;
 }
-section.darkgray-info{
+section.info-maincolor{
+    /*background-color: #434344;*/
     background-color: #434344;
     color: white;
 }
 #date{
     text-shadow:
-            0 0 21px #fff,
-            0 0 42px #eee,
-            0 0 82px #ddd,
-            0 0 92px #ccc,
-            0 0 102px #ccc;
+            0 0 21px rgba(255,255,255, .5),
+            0 0 42px rgba(239, 239, 239, .5),
+            0 0 82px rgba(223, 223, 223, .5),
+            0 0 92px rgba(207, 207, 207, .5),
+            0 0 102px rgba(207, 207, 207, .5);
 }
 section.fame{
     display: grid;
@@ -195,4 +213,12 @@ section.fame #alphachmp{
     background-color: #43f0ea;
     border-radius: 5px;
     margin: 5px;
+}
+
+a.regbutton {
+    padding: 3px 5px 3px 5px;
+    border: black 3px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: rgba(80, 66, 207, 0.3);
 }
