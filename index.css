@@ -120,7 +120,7 @@ section.info-subcolor-2{
     background-color: #5fe265;
     color: black;
 }
-section.info-subcolor-1,section.info-subcolor-2 a {
+section.info-subcolor-1 a,section.info-subcolor-2 a {
     color: black;
 }
 section.info-maincolor{
