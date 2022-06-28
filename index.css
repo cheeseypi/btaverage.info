@@ -18,9 +18,7 @@ html {
 }
 
 body {
-    /*background-color: #535354;*/
-    /*background-color: #5fe265;*/
-    background-color: #f3e893;
+    background-color: #7c7481;
     color: white;
     font-family: sans-serif;
 }
@@ -109,36 +107,36 @@ section {
     text-align: center;
     align-content: center;
 }
-section a {
+
+section.info-maincolor{
+    background-color: #5c5461;
+    color: white;
+}
+section.info-maincolor a {
     color: white;
 }
 section.info-subcolor-1 {
-    /*background-color: #24bab5;*/
-    /*background-color: #47cc64;*/
-    background-color: #ebcc7a;
+    background-color: #7c7481;
+    color: black;
+}
+section.info-subcolor-1 a {
     color: black;
 }
 section.info-subcolor-2{
-    /*background-color: #43f0ea;*/
-    /*background-color: #5fe265;*/
-    background-color: #f3e893;
+    background-color: #8c8491;
     color: black;
 }
-section.info-subcolor-1 a,section.info-subcolor-2 a {
+section.info-subcolor-2 a {
     color: black;
 }
-section.info-maincolor{
-    /*background-color: #434344;*/
-    background-color: #425e7d;
-    color: white;
-}
+
 #date{
-    text-shadow:
+    /*text-shadow:
             0 0 21px rgba(255,255,255, .5),
             0 0 42px rgba(239, 239, 239, .5),
             0 0 82px rgba(223, 223, 223, .5),
             0 0 92px rgba(207, 207, 207, .5),
-            0 0 102px rgba(207, 207, 207, .5);
+            0 0 102px rgba(207, 207, 207, .5);*/
 }
 section.fame{
     display: grid;
