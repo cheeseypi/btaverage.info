@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #7c7481;
+    background-color: #cc6950;
     color: white;
     font-family: sans-serif;
 }
@@ -87,12 +87,20 @@ img.btalogo {
     img.btalogo {
         width: 400px;
     }
+    .titletext {
+        font-size: 34pt;
+    }
+}
+@media only screen and (max-width: 600px){
     iframe[src*=youtube]{
         width: 300px;
         height: 168.75px;
     }
-    .titletext {
-        font-size: 34pt;
+    iframe.rulespreview{
+        display: none;
+    }
+    .flowchart{
+        width: 300px;
     }
 }
 @media only screen and (max-width: 450px){
@@ -109,21 +117,21 @@ section {
 }
 
 section.info-maincolor{
-    background-color: #5c5461;
+    background-color: #5e2020;
     color: white;
 }
 section.info-maincolor a {
     color: white;
 }
 section.info-subcolor-1 {
-    background-color: #7c7481;
+    background-color: #cc6950;
     color: black;
 }
 section.info-subcolor-1 a {
     color: black;
 }
 section.info-subcolor-2{
-    background-color: #8c8491;
+    background-color: #a95248;
     color: black;
 }
 section.info-subcolor-2 a {
@@ -217,10 +225,10 @@ section.fame #alphachmp{
     margin: 5px;
 }
 
-a.regbutton {
+.regbutton {
     padding: 3px 5px 3px 5px;
     border: black 3px solid;
     border-radius: 5px;
     text-decoration: none;
-    background-color: rgba(80, 66, 207, 0.3);
+    background-color: rgba(115, 66, 207, 0.3);
 }
