@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #cc6950;
+    background-color: #c16c4d;
     color: white;
     font-family: sans-serif;
 }
@@ -124,14 +124,14 @@ section.info-maincolor a {
     color: white;
 }
 section.info-subcolor-1 {
-    background-color: #cc6950;
+    background-color: #c16c4d;
     color: black;
 }
 section.info-subcolor-1 a {
     color: black;
 }
 section.info-subcolor-2{
-    background-color: #a95248;
+    background-color: #c57848;
     color: black;
 }
 section.info-subcolor-2 a {
