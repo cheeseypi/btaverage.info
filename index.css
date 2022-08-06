@@ -232,3 +232,15 @@ section.fame #alphachmp{
     text-decoration: none;
     background-color: rgba(115, 66, 207, 0.3);
 }
+
+.berrytable{
+    display: inline-block;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.berrytable tr,td{
+    border: 1px solid black;
+}
+.berrytable td {
+    min-width: 25px;
+}
