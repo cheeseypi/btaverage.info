@@ -146,12 +146,7 @@ section.info-subcolor-2 a {
 }
 
 #date{
-    text-shadow:
-            /*0 0 21px rgba(0,0,0, .5),*/
-            /*0 0 42px rgba(16, 16, 26, .5),*/
-            0 0 82px rgba(32, 32, 42, .5),
-            0 0 92px rgba(48, 48, 58, .5),
-            0 0 102px rgba(48, 48, 58, .5);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.53);
 }
 #date .btaname{
     color: var(--accent-color);
