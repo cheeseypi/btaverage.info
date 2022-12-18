@@ -99,3 +99,9 @@
     color: black;
     border-color: lightblue;
 }
+
+.btatitle.autumn {
+    background-color: orange;
+    color: black;
+    border-color: orangered;
+}

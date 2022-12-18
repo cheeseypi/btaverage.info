@@ -2,10 +2,17 @@
     font-family: Renogare;
     src: url('res/Renogare-Regular.otf') format('opentype');
 }
-/* Colors
-Background: #535354
-Foreground: #24bab5
-Light Foreground: #43f0ea*/
+
+:root {
+    --footer-background: #416da4;
+    --footer-text: white;
+    --section-1-background: #f6faff;
+    --section-1-text: black;
+    --section-2-background: #cbdef0;
+    --section-2-text: black;
+    --accent-color: #073a74;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +25,8 @@ html {
 }
 
 body {
-    background-color: #c16c4d;
-    color: white;
+    background-color: var(--section-1-background);
+    color: var(--section-1-text);
     font-family: sans-serif;
 }
 
@@ -52,7 +59,7 @@ nav a {
     margin-right: 5px;
     display: inline-block;
     border-radius: 3px;
-    background-color: black;
+    background-color: var(--accent-color);
     color: white;
     box-shadow: 2px 2px 8px 0px rgba(0,0,0,.6) ;
     transition: box-shadow .3s;
@@ -117,34 +124,38 @@ section {
 }
 
 section.info-maincolor{
-    background-color: #5e2020;
-    color: white;
+    background-color: var(--footer-background);
+    color: var(--footer-text);
 }
 section.info-maincolor a {
-    color: white;
+    color: var(--footer-text);
 }
 section.info-subcolor-1 {
-    background-color: #c16c4d;
-    color: black;
+    background-color: var(--section-1-background);
+    color: var(--section-1-text);
 }
 section.info-subcolor-1 a {
-    color: black;
+    color: var(--section-1-text);
 }
 section.info-subcolor-2{
-    background-color: #c57848;
-    color: black;
+    background-color: var(--section-2-background);
+    color: var(--section-2-text);
 }
 section.info-subcolor-2 a {
-    color: black;
+    color: var(--section-2-text);
 }
 
 #date{
-    /*text-shadow:
-            0 0 21px rgba(255,255,255, .5),
-            0 0 42px rgba(239, 239, 239, .5),
-            0 0 82px rgba(223, 223, 223, .5),
-            0 0 92px rgba(207, 207, 207, .5),
-            0 0 102px rgba(207, 207, 207, .5);*/
+    text-shadow:
+            /*0 0 21px rgba(0,0,0, .5),*/
+            /*0 0 42px rgba(16, 16, 26, .5),*/
+            0 0 82px rgba(32, 32, 42, .5),
+            0 0 92px rgba(48, 48, 58, .5),
+            0 0 102px rgba(48, 48, 58, .5);
+}
+#date .btaname{
+    color: var(--accent-color);
+    font-size: 1.2em;
 }
 section.fame{
     display: grid;
