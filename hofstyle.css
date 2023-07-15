@@ -86,8 +86,6 @@
     transform: translateY(-1px);
 }
 
-.winnertitle.final {}
-
 .btatitle.spring {
     background-color: lightgreen;
     color: black;
@@ -104,4 +102,10 @@
     background-color: orange;
     color: black;
     border-color: orangered;
+}
+
+.btatitle.winter {
+    background-color: #cbdef0;
+    color: black;
+    border-color: #f6faff;
 }
