@@ -4,13 +4,13 @@
 }
 
 :root {
-  --footer-background: #114e1e;
+  --footer-background: #313131;
   --footer-text: white;
-  --section-1-background: #e9ffe0;
+  --section-1-background: #24bab5;
   --section-1-text: black;
-  --section-2-background: #b1ebbc;
+  --section-2-background: #179c98;
   --section-2-text: black;
-  --accent-color: #114e1e;
+  --accent-color: #313131;
 }
 
 * {
@@ -117,26 +117,29 @@ nav a:hover {
 }
 
 img.btalogo {
-  width: 500px;
-  transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
+  /* width: 600px; */
+  width: 70vw;
+  max-width: 650px;
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
   padding-top: 35px;
   padding-bottom: 20px;
   -webkit-filter: drop-shadow(5px -5px 8px rgba(0, 0, 0, 0.5));
   filter: drop-shadow(5px -5px 8px rgba(0, 0, 0, 0.5));
 }
 @media only screen and (max-width: 1400px) {
-  img.btalogo {
+  /* img.btalogo {
     width: 400px;
-  }
+  } */
   .chalkboard {
     --board-width: 500px;
   }
 }
 @media only screen and (max-width: 900px) {
-  img.btalogo {
-    width: 400px;
-  }
+  /* img.btalogo { */
+    /* width: 400px; */
+    /* width: 70v */
+  /* } */
   .titletext {
     font-size: 34pt;
   }
@@ -157,17 +160,17 @@ img.btalogo {
   }
 }
 @media only screen and (max-width: 450px) {
-  img.btalogo {
+  /* img.btalogo {
     width: 300px;
-  }
+  } */
   .chalkboard {
     --board-width: 300px;
   }
 }
 @media only screen and (max-width: 350px) {
-  img.btalogo {
+  /* img.btalogo {
     width: 150px;
-  }
+  } */
   .chalkboard {
     --board-width: 150px;
   }
