@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Patua+One&family=Homemade+Apple&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <link rel="stylesheet" type="text/css" href="/hofstyle.css" />
+    <link rel="shortctut icon" type="image/gif" href="/res/HeartCycle.gif" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="The Better than Average Celeste Tournament">
 
@@ -21,8 +22,8 @@
 <body>
     <nav>
         <a href="#event">Event Info</a>
-        <a href="#rules">Rules</a>
         <a href="#registration">Register</a>
+        <a href="#rules">Rules</a>
         <a href="#hof">Hall of Fame</a>
         <a href="#vods">Video Record</a>
         <a href="#about">About Us</a>
@@ -31,13 +32,15 @@
         <img class="btalogo" alt="Better than Average" src="/res/BTA-Redux.png" />
         <p>Welcome to BTA, a Celeste Tournament for players of all skill levels</p>
         <p>The event will be streamed live at <a href="https://twitch.tv/AverageImposter" target="_blank" rel="noopener noreferrer">twitch.tv/AverageImposter</a>. You are also welcome to stream your perspective throughout the tourney.</p>
+        <h3 id="registration">BTA Winter '24 will be held on February 24th & 25th @ 9am Eastern Standard Time</h3>
+        <p id="regButton"><!--<a class="regbutton" href="https://forms.gle/HbGNFFfdojaqwfe6A" target="_blank" rel="noopener noreferrer">Register Now!</a>--></p>
+        <br>
+        <p><a class="regbutton" href="https://discord.gg/6FnHAe7fHs" target="_blank" rel="noopener noreferrer">Join the Discord</a></p>
     </section>
     <section class="info-subcolor-2" id="rules">
         <h3>Rules!</h3>
         <br>
         <p><a class="regbutton" href="/res/Rulebook.pdf" target="_blank" rel="noopener noreferrer">Rules & Setup Guide</a></p>
-        <br>
-        <p><a class="regbutton" href="https://discord.gg/6FnHAe7fHs" target="_blank" rel="noopener noreferrer">Join the Discord</a></p>
     </section>
     <section class="info-subcolor-1" id="hof">
         <h3>Hall of Fame</h3>
@@ -209,6 +212,25 @@
         <!-- <h3>Wonderful Cassette Art by <a target="_blank" rel="noopener noreferrer"
                 href="https://www.instagram.com/spirikiri_art/">SpiriKiri_</a></h3> -->
     </section>
+        <script>
+            let today = new Date();
+            let regOpen = new Date('2024-01-20T10:00:00-05:00');
+            let buttonContainer = document.getElementById("regButton");
+            if (today >= regOpen){
+                let link = document.createElement('a');
+                link.className = "regbutton";
+                link.href = "https://forms.gle/HbGNFFfdojaqwfe6A";
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                link.innerText = "Register Now!";
+                buttonContainer.appendChild(link);
+            }
+            else {
+                let h4 = document.createElement('h4');
+                h4.innerText = "Registration will open on January 20th @ 10am EST! Join the discord for an announcement!";
+                buttonContainer.appendChild(h4);
+            }
+        </script>
 </body>
 
 </html>
