@@ -107,3 +107,9 @@
     color: white;
     border-color: #c8b763;
 }
+
+.tablecategory {
+    grid-column: span 6;
+    margin-top: 10px !important;
+    font-family: 'Renogare', sans-serif;
+}

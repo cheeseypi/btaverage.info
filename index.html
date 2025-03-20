@@ -5,7 +5,9 @@
     <title>Better than Average</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Patua+One&family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Patua+One&family=Homemade+Apple&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <link rel="stylesheet" type="text/css" href="/hofstyle.css" />
     <link rel="shortctut icon" type="image/gif" href="/res/HeartCycle.gif" />
@@ -31,20 +33,26 @@
     <section class="info-subcolor-1" id="event">
         <img class="btalogo" alt="Better than Average" src="/res/BTA-Redux.png" />
         <p>Welcome to BTA, a Celeste Tournament for players of all skill levels</p>
-        <p>The event will be streamed live at <a href="https://twitch.tv/AverageImposter" target="_blank" rel="noopener noreferrer">twitch.tv/AverageImposter</a>. You are also welcome to stream your perspective throughout the tourney.</p>
-        <h3 id="registration">BTA Winter '24 will be held on February 24th & 25th @ 9am Eastern Standard Time</h3>
-        <p id="regButton"><!--<a class="regbutton" href="https://forms.gle/HbGNFFfdojaqwfe6A" target="_blank" rel="noopener noreferrer">Register Now!</a>--></p>
+        <p>The event will be streamed live at <a href="https://twitch.tv/AverageImposter" target="_blank"
+                rel="noopener noreferrer">twitch.tv/AverageImposter</a>. You are also welcome to stream your perspective
+            throughout the tourney.</p>
+        <h3 id="registration">BTA Spring '25 will be held on April 5th</h3>
+        <!-- <p id="regButton"><a class="regbutton" href="https://forms.gle/HbGNFFfdojaqwfe6A" target="_blank" rel="noopener noreferrer">Register Now!</a></p> -->
         <br>
         <p><a class="regbutton" href="https://discord.gg/6FnHAe7fHs" target="_blank" rel="noopener noreferrer">Join the Discord</a></p>
     </section>
     <section class="info-subcolor-2" id="rules">
-        <h3>Rules!</h3>
+        <h2>All BTA Events this year will be MODDED!</h2>
+        <h3>Spring '25 will contain levels from... <b>Strawberry Jam!</b></h3>
         <br>
-        <p><a class="regbutton" href="/res/Rulebook.pdf" target="_blank" rel="noopener noreferrer">Rules & Setup Guide</a></p>
+        <!-- <p><a class="regbutton" href="/res/Rulebook.pdf" target="_blank" rel="noopener noreferrer">Rules & Setup Guide</a></p> -->
+        <p><a class="regbutton" href="https://docs.google.com/document/d/1sc7rMtiLPhkitZ0ypNhDXXmAAGJhtDlUDgQfpmPCOjc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Format Guidelines &
+                Rules</a></p>
     </section>
     <section class="info-subcolor-1" id="hof">
-        <h3>Hall of Fame</h3>
+        <h2>Hall of Fame</h2>
         <div class="btahof">
+            <p class="tablecategory">2023-2024 Season</p>
             <div class="tableheader"></div>
             <div class="tableheader">
                 <p>&#x1F499 Blue</p>
@@ -60,6 +68,36 @@
             </div>
             <div class="tableheader">
                 <p>&#x1F5A4 Lunar</p>
+            </div>
+            <div class="btatitle">
+                <p>Spring '24</p>
+            </div>
+            <div class="winnertitle blue">
+                <p>Ad</p>
+            </div>
+            <div class="winnertitle red">
+                <p>Tnt_go_bang</p>
+            </div>
+            <div class="winnertitle cracked" style="grid-column: span 3">
+                <p>Vapo</p>
+            </div>
+            <div class="btatitle">
+                <p>Winter '24</p>
+            </div>
+            <div class="winnertitle blue">
+                <p>maybeGVST</p>
+            </div>
+            <div class="winnertitle red">
+                <p>Tnt_go_bang</p>
+            </div>
+            <div class="winnertitle yellow">
+                <p>rhelmot</p>
+            </div>
+            <div class="winnertitle cracked">
+                <p>rhelmot</p>
+            </div>
+            <div class="winnertitle lunar">
+                <p>Dragon5112</p>
             </div>
             <div class="btatitle">
                 <p>Autumn '23</p>
@@ -97,6 +135,7 @@
             <div class="winnertitle lunar">
                 <p>Vapo41</p>
             </div>
+            <p class="tablecategory">2022 Season</p>
             <div class="btatitle winter">
                 <p>Winter '22</p>
             </div>
@@ -160,6 +199,7 @@
             <div class="winnertitle cracked final" style="grid-column: span 2">
                 <p>Tiyo98</p>
             </div>
+            <p class="tablecategory">Early BTAs</p>
             <div class="btatitle">
                 <p>BTA Dec. '21</p>
             </div>
@@ -212,25 +252,25 @@
         <!-- <h3>Wonderful Cassette Art by <a target="_blank" rel="noopener noreferrer"
                 href="https://www.instagram.com/spirikiri_art/">SpiriKiri_</a></h3> -->
     </section>
-        <script>
-            let today = new Date();
-            let regOpen = new Date('2024-01-20T10:00:00-05:00');
-            let buttonContainer = document.getElementById("regButton");
-            if (today >= regOpen){
-                let link = document.createElement('a');
-                link.className = "regbutton";
-                link.href = "https://forms.gle/HbGNFFfdojaqwfe6A";
-                link.target = "_blank";
-                link.rel = "noopener noreferrer";
-                link.innerText = "Register Now!";
-                buttonContainer.appendChild(link);
-            }
-            else {
-                let h4 = document.createElement('h4');
-                h4.innerText = "Registration will open on January 20th @ 10am EST! Join the discord for an announcement!";
-                buttonContainer.appendChild(h4);
-            }
-        </script>
+    <!-- <script>
+        let today = new Date();
+        let regOpen = new Date('2024-01-20T10:00:00-05:00');
+        let buttonContainer = document.getElementById("regButton");
+        if (today >= regOpen) {
+            let link = document.createElement('a');
+            link.className = "regbutton";
+            link.href = "https://forms.gle/HbGNFFfdojaqwfe6A";
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.innerText = "Register Now!";
+            buttonContainer.appendChild(link);
+        }
+        else {
+            let h4 = document.createElement('h4');
+            h4.innerText = "Registration will open on January 20th @ 10am EST! Join the discord for an announcement!";
+            buttonContainer.appendChild(h4);
+        }
+    </script> -->
 </body>
 
 </html>

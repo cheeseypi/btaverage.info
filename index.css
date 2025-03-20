@@ -120,8 +120,8 @@ img.btalogo {
   /* width: 600px; */
   width: 70vw;
   max-width: 650px;
-  transform: rotate(-2deg);
-  -webkit-transform: rotate(-2deg);
+  transform: rotate(2.2deg);
+  -webkit-transform: rotate(2.2deg);
   padding-top: 35px;
   padding-bottom: 20px;
   -webkit-filter: drop-shadow(5px -5px 8px rgba(0, 0, 0, 0.5));
