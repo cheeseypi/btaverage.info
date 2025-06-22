@@ -108,6 +108,12 @@
     border-color: #c8b763;
 }
 
+.btatitle.modded {
+    background-color: #030b10;
+    color: #eecb49;
+    border-color: #a0872B;
+}
+
 .tablecategory {
     grid-column: span 6;
     margin-top: 10px !important;
